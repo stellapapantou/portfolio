@@ -1,0 +1,104 @@
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @media only screen and (min-height: 768px) and (max-height: 1300px) {
+        min-height: 80vh;
+    }
+}
+
+
+.arrow-btn {
+    width: 100%;
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+        padding: 0.75rem;
+        background: var(--white);
+        box-shadow: var(--light-shadow);
+        border-radius: 50%;
+        cursor: pointer;
+        animation: float infinite 4s ease-in-out;
+        transform: translateY(0);
+        transition: 0.35s background ease-in-out;
+
+        &:hover{
+            background: var(--blue);
+        }
+    }
+}
+
+@keyframes float{
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+.social-media{
+    position: relative;
+}
+
+.social-media > a{
+    padding: 0.75rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: var(--light-shadow);
+    transition: 0.3s background-color ease-in-out;
+}
+
+.social-media > a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.social-media > a:hover{
+    background-color: var(--blue);
+}
+
+.social-media > a:hover::before{
+    width: 110%;
+    height: 110%;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 860px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        min-height: 80vh;
+    }
+
+    .hero-content{
+        width: 100%;
+        text-align: center;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .arrow-btn{
+        position: relative;
+    }
+}
