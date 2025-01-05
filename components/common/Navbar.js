@@ -52,7 +52,7 @@ export default function Navbar(){
         <nav className={`${styles["navbar"]} backdrop-blur-md`}>
             <div className="container mx-auto flex justify-between items-center py-4">
                 <div className={styles["nav-left"]}>
-                    <Link href="/" className="text-display-xs font-semibold tracking-tighter text-primary-600 dark:text-blue-200">Stella.Papantou</Link>
+                    <Link href="/" className="transition-all duration-300 text-display-xs font-semibold tracking-tighter hover:tracking-tight text-primary-600 dark:text-blue-200">Stella.Papantou</Link>
                 </div>
                 <div className={hamburgerState && !isScrolledDown ? `${styles["nav-list"]} ${styles["active"]}` : styles["nav-list"]}>
                     <div className={styles["nav-menu"]}>
