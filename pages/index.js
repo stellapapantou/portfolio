@@ -1,9 +1,7 @@
 import Layout from "../components/layout/Layout"
-import dynamic from "next/dynamic"
 import HeroSection from "../components/home/HeroSection"
-
-const ResumeIntro = dynamic(() => import("../components/home/ResumeIntro"))
-const ServicesSection = dynamic(() => import("../components/services"))
+import ResumeIntro from "../components/home/ResumeIntro"
+import ServicesSection from "../components/services"
 
 export default function Home() {
   return(
