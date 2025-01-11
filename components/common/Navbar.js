@@ -54,10 +54,11 @@ export default function Navbar(){
                 <div className={styles["nav-left"]}>
                     <Link href="/" className="transition-all duration-300 text-display-xs font-semibold tracking-tighter hover:tracking-tight text-primary-600 dark:text-blue-200">Stella.Papantou</Link>
                 </div>
-                <div className={hamburgerState && !isScrolledDown ? `${styles["nav-list"]} ${styles["active"]}` : styles["nav-list"]}>
+                <div className={hamburgerState ? `${styles["nav-list"]} ${styles["active"]}` : styles["nav-list"]}>
                     <div className={styles["nav-menu"]}>
                         {navigations.map((navigation, i) => (
-                          <Link className={`${isActive(navigation.url, router.pathname)} text-black dark:text-white text-display-xs`} href={navigation.url} key={i}>{navigation.label}</Link>
+                          <Link className={`${isActive(navigation.url, router.pathname)} text-black dark:text-white text-display-xs`} href={navigation.url} key={i} onClick={() => {
+                            if (hamburgerState) setHamburger(false);}}>{navigation.label}</Link>
                         ))}
 
                         <div className="toggle-btn w-16 h-8 py-1 px-2 bg-blue-50 dark:bg-gray-700 rounded-full cursor-pointer" onClick={() => toggleTheme()}>

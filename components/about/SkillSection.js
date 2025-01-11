@@ -25,7 +25,7 @@ const SkillsArray = ["HTML5", "Css3", "Javascript", "React", "NextJs", "Tailwind
 const SkillsComponent = ({ theme }) => {
     return (
         <Section title={"My skills"}>
-            <div className="my-12 flex flex-row basis-0 lg:gap-8 gap-6 relative">
+            <div className="my-12 flex flex-col lg:flex-row basis-0 lg:gap-8 gap-6 relative">
                 {SkillsBoxes.map((skills, i) => (
                     <div className={`p-8 rounded-2xl ${skills.bgColor}`} key={i}>
                         <h3 className="text-display-sm font-semibold pb-4">{skills.title}</h3>
@@ -36,7 +36,7 @@ const SkillsComponent = ({ theme }) => {
                 
             <h3 className="text-display-sm font-semibold pb-4">Favorite tech stack and tools:</h3>
             <div className="grid lg:grid-cols-12 flex-col">
-                <div className="grid grid-cols-8 gap-6 lg:col-span-8">
+                <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 lg:col-span-8">
                 {SkillsArray.map(skill => (
                 <Tooltip
                     placement="bottom"
