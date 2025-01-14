@@ -32,21 +32,21 @@ const ExperienceArray = [
       year: "2014 - 2015",
       company: "Bethere app",
       companyURL: "https://apps.apple.com/gr/app/bethere-app/id727485838",
-      title: "Front-End Developer / Wed Designer",
+      title: "Front-End Developer / Web Designer",
       description: "As a contractor, I developed websites for a reservation and ordering app designed for coffee shops, restaurants, etc. Additionally, I enhanced their brand presence by creating assets ranging from advertising GIFs to soupla designs."
     },
     {
       year: "Sep 2013 - June 2015",
       company: "Computer Technology Institute",
       companyURL: "https://www.cti.gr/",
-      title: "Front-End Developer / Wed Designer",
+      title: "Front-End Developer / Web Designer",
       description: <>Contributed to educational projects, with a primary focus on designing and developing the <Link href='https://e-me.edu.gr' target='_blank' className='underline'>e-me platform</Link>, enhancing digital learning experiences in greek schools.</>
     },
     {
       year: "Apr 2011 - Jul 2013",
       company: "Ad agency Intros.gr",
       companyURL: "https://www.intros.gr/",
-      title: "Front-End Developer / Wed Designer",
+      title: "Front-End Developer / Web Designer",
       description: "Crafted engaging newsletters, social media campaigns, responsive websites, e-commerce platforms, and portals for a portfolio of renowned companies, ensuring high-quality, impactful digital experiences."
     }
   ]
